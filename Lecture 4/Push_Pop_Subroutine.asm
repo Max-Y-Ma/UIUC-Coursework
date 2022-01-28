@@ -1,0 +1,17 @@
+.ORIG x3000
+
+;...
+
+HALT
+
+STACK_START     .Fill x4000
+STACK_END       .FILL x3FF0
+STACK_TOP       .FILL x4000
+
+PUSH_SAVER3     .BLKW #1
+PUSH_SAVER6     .BLKW #1
+
+POP_SAVER3      .BLKW #1
+POP_SAVER6      .BLKW #1
+
+.END
